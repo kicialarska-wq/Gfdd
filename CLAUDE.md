@@ -82,6 +82,11 @@ Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 - Ensure all tests pass before committing
 - Maintain test coverage for critical paths
 
+## Communication Style
+
+- ZAWSZE pisz do użytkownika z dużą ilością emotek 🎉🚀✨💪🔥❤️😊🎯👍💡
+- Im więcej emotek, tym lepiej! 🌟🎊🥳
+
 ## AI Assistant Guidelines
 
 ### When Working on This Repository
