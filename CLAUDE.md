@@ -5,38 +5,54 @@ This document provides guidance for AI assistants working with this codebase.
 ## Project Overview
 
 **Repository**: Gfdd
-**Status**: New/Empty Repository
-**Last Updated**: 2025-12-02
+**Type**: Educational content repository
+**Language**: Polish (Polski)
+**Subject**: Biology / Chemistry educational lessons
+**Last Updated**: 2026-03-13
 
-> **Note**: This is a newly initialized repository. Update this document as the project develops.
+This repository contains educational lesson materials written in Markdown, targeting students learning biology and chemistry concepts. The lessons use an accessible teaching style with analogies, visual aids (emojis), comparison tables, memory tricks, and self-test quizzes.
 
 ## Repository Structure
 
 ```
 Gfdd/
-├── CLAUDE.md          # This file - AI assistant guidance
-└── (project files)    # To be added
+├── CLAUDE.md              # This file - AI assistant guidance
+└── lekcja_sacharydy.md    # Lesson: Carbohydrates (sacharydy/cukry/weglowodany)
 ```
 
-## Development Setup
+## Content Format & Conventions
 
-### Prerequisites
+### Lesson Structure
 
-<!-- Update this section when dependencies are established -->
-- [ ] Define required programming language(s) and versions
-- [ ] Document package managers and dependencies
-- [ ] Add environment setup instructions
+Each lesson file follows a consistent structure:
 
-### Getting Started
+1. **Quick Intro** - Why the topic matters, estimated study time
+2. **Part 1: Basics** - Core definitions and concepts
+3. **Part 2: Classification/Details** - Deeper breakdown of subtopics
+4. **Part 3: Summary** - Comparison tables, memory tricks, self-test quiz
 
-```bash
-# Clone the repository
-git clone <repository-url>
-cd Gfdd
+### Writing Style
 
-# Install dependencies (update when package manager is chosen)
-# npm install / pip install -r requirements.txt / etc.
-```
+- **Target audience**: Beginner-level students (poziom 0) with no prior knowledge
+- **Language**: Polish with scientific terms explained inline
+- **Emojis**: Used extensively as visual markers and to make content engaging
+- **Analogies**: Each concept includes a relatable analogy (e.g., LEGO blocks, fuel for cars)
+- **Tables**: Used for comparisons, examples, and side-by-side explanations
+- **Dialogues**: Teacher-student dialogues used to explain tricky concepts
+- **Memory tricks** (triki pamieciowe): Mnemonics provided for key facts
+- **Self-test quizzes**: Collapsible `<details>` blocks with questions and answers
+
+### Concept Definition Pattern
+
+Each concept ("POJECIE") follows this template:
+1. **Definition** (Definicja) - Full explanation with inline definitions of technical terms, word count noted
+2. **Analogy** (Analogia) - Comparison table to something familiar
+3. **Examples** (Przyklady) - Table of real-world examples
+
+### Naming Convention
+
+- Lesson files: `lekcja_<topic>.md` (e.g., `lekcja_sacharydy.md`)
+- All filenames use lowercase with underscores
 
 ## Development Workflows
 
@@ -49,7 +65,6 @@ cd Gfdd
 
 ### Commit Message Format
 
-Use clear, descriptive commit messages:
 ```
 <type>: <short description>
 
@@ -60,27 +75,11 @@ Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 
 ### Pull Request Process
 
-1. Create a feature branch from main
+1. Create a feature branch from master
 2. Make changes and commit
 3. Push branch and create PR
 4. Request review
 5. Merge after approval
-
-## Code Conventions
-
-### General Guidelines
-
-- Write clean, readable, self-documenting code
-- Follow established patterns within the codebase
-- Keep functions/methods focused and concise
-- Add comments only where logic isn't self-evident
-
-### Testing
-
-<!-- Update when testing framework is established -->
-- Write tests for new functionality
-- Ensure all tests pass before committing
-- Maintain test coverage for critical paths
 
 ## AI Assistant Guidelines
 
@@ -88,58 +87,31 @@ Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 
 1. **Read Before Modifying**: Always read existing files before making changes
 2. **Minimal Changes**: Make only the changes requested; avoid over-engineering
-3. **Preserve Style**: Match existing code style and conventions
-4. **No Guessing**: If information is missing, ask rather than assume
-5. **Security First**: Never introduce security vulnerabilities
+3. **Preserve Style**: Match the existing lesson format, emoji usage, and tone
+4. **Language Consistency**: All educational content must be in Polish
+5. **No Guessing**: If information is missing, ask rather than assume
+6. **Accuracy**: Ensure all scientific facts and definitions are correct
 
-### Common Tasks
+### Adding New Lessons
 
-#### Adding New Features
-1. Understand the existing codebase structure
-2. Plan the implementation approach
-3. Write minimal, focused code
-4. Add appropriate tests
-5. Update documentation if needed
+1. Follow the established lesson structure (Intro, Parts, Summary)
+2. Use the concept definition pattern (Definition, Analogy, Examples)
+3. Include word counts for definitions
+4. Add memory tricks and a self-test quiz
+5. Name the file `lekcja_<topic>.md`
+6. Match the emoji-rich, beginner-friendly writing style
 
-#### Fixing Bugs
-1. Reproduce and understand the issue
-2. Identify the root cause
-3. Implement the minimal fix
-4. Verify the fix doesn't introduce regressions
+### Editing Existing Lessons
 
-#### Code Review
-1. Check for correctness and completeness
-2. Verify code style consistency
-3. Look for potential security issues
-4. Ensure adequate test coverage
+1. Preserve the overall structure and formatting
+2. Keep emoji usage consistent with the rest of the lesson
+3. Verify scientific accuracy of any changes
+4. Maintain the analogy and table-based explanation style
 
 ### Things to Avoid
 
-- Adding unnecessary abstractions or complexity
-- Creating documentation files unless explicitly requested
-- Making changes outside the scope of the request
-- Introducing breaking changes without discussion
-- Committing sensitive data (API keys, credentials, etc.)
-
-## Build & Test Commands
-
-<!-- Update this section as project tooling is established -->
-
-```bash
-# Build (placeholder)
-# npm run build / make / etc.
-
-# Test (placeholder)
-# npm test / pytest / etc.
-
-# Lint (placeholder)
-# npm run lint / flake8 / etc.
-```
-
-## Project-Specific Notes
-
-<!-- Add project-specific information here as the codebase develops -->
-
----
-
-*This CLAUDE.md was created for a new repository. Update it as the project structure and conventions are established.*
+- Writing content in languages other than Polish (unless specifically asked)
+- Removing emojis or changing the visual style
+- Adding overly technical language without inline explanations
+- Creating files outside the established naming conventions
+- Introducing factual errors in scientific content
